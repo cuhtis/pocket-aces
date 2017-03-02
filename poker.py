@@ -28,14 +28,12 @@ class Deck():
     def shuffle_deck(self):
         random.shuffle(self.cards)
 
-    def remove_card(self):
-        pass
-
     def draw_card(self):
-        pass
+        card = self.cards.pop(0)
+        return card
 
     def burn_card(self):
-        pass
+        card = self.cards.pop(0)
 
     def print_deck(self):
         for card in self.cards:
@@ -106,7 +104,7 @@ def Round():
 
 def main():
     game = Game()
-
+    deck = Deck()
 
 if __name__ == "__main__":
     main()

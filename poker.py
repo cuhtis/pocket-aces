@@ -29,11 +29,10 @@ class Deck():
         random.shuffle(self.cards)
 
     def draw_card(self):
-        card = self.cards.pop(0)
-        return card
+        return self.cards.pop(0)
 
     def burn_card(self):
-        card = self.cards.pop(0)
+        self.cards.pop(0)
 
     def print_deck(self):
         for card in self.cards:

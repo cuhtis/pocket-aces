@@ -2,15 +2,15 @@ import random
 
 
 class Card():
-    RANKS = ['2','3','4','5','6','7','8','9','10','J','Q','K','A']
-    SUITS = ['D','C','H','S']
+    RANKS = [' 2',' 3',' 4',' 5',' 6',' 7',' 8',' 9','10',' J',' Q',' K',' A']
+    SUITS = ['d','c','h','s']
 
     def __init__(self, rank, suit):
         self.rank = rank
         self.suit = suit
 
     def __str__(self):
-        return "%s-%s" % (self.rank, self.suit)
+        return "[%s%s]" % (self.rank, self.suit)
 
 
 class Deck():

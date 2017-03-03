@@ -34,12 +34,12 @@ class Deck():
     def burn_card(self):
         self.cards.pop(0)
 
-    def print_deck(self):
-        for card in self.cards:
-            print(card)
-
     def __str__(self):
-        pass
+        output = ""
+        for card in self.cards:
+            output += str(card)
+            output += '\n'
+        return output
 
 
 class Player():
@@ -103,7 +103,6 @@ def Round():
 
 def main():
     game = Game()
-    deck = Deck()
 
 if __name__ == "__main__":
     main()
